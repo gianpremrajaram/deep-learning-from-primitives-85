@@ -35,7 +35,8 @@ causing validation accuracy to oscillate between 74-79%.
 
 (v1) Clean Ablation (No BatchNorm in either model): Baseline uses zero
 regularisation; regularised uses Dropout p=0.3 + weight_decay=1e-4.
-Baseline: Train 100.00% | Val 77.72% | Test 78.09% | Gap 22.28pp. Regularised: Train 99.99% | Val 78.40% | Test 77.94% | Gap 21.59pp.
+Baseline: Train 100.00% | Val 77.72% | Test 78.09% | Gap 22.28pp.
+Regularised:Train 99.99% | Val 78.40% | Test 77.94% | Gap 21.59pp.
 Test accuracies are statistically indistinguishable (0.15pp), consistent
 with both models' validation curves converging in later epochs; the
 generalisation benefit is most visible in the training trajectory and
@@ -90,6 +91,13 @@ models in v1 eliminated the confound, establishing that even modest dropout
 and weight decay produce measurable generalisation improvements when applied
 to a genuinely unconstrained architecture.
 
-GenAI Error Correction: Claude initially drafted a technical analysis that overstated trends from raw data points and entirely missed the regularisation dynamics of epochs 8-17. Furthermore, it incorrectly recommended a batch size of 256 and 50 epochs, and advised against re-training when I sought to improve the model. I rejected this advice, switched to a batch size of 128 and 75 epochs for better generalisation and visual clarity, re-trained the model, and manually rewrote the analysis to accurately reflect the true learning trajectory.
+GenAI Error Correction: Claude initially drafted a technical analysis that
+overstated trends from raw data points and entirely missed the regularisation
+ dynamics of epochs 8-17. Furthermore, it incorrectly recommended a batch
+size of 256 and 50 epochs, and advised against re-training when I sought to
+improve the model. I rejected this advice, switched to a batch size of 128
+and 75 epochs for better generalisation and visual clarity, re-trained the
+model, and manually rewrote the analysis to accurately reflect the true
+learning trajectory.
 ========================================================================
 ```
