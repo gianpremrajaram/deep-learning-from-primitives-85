@@ -1,0 +1,13 @@
+# Datasets (CIFAR-10 auto-downloads to ./data on first run — not committed)
+data/
+**/data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / tooling
+.DS_Store
+.claude/
