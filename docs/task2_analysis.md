@@ -27,10 +27,10 @@ accuracy.
 [Noise Robustness]
 Under additive Gaussian noise, accuracy fell from 79.08% on the
 uncorrupted test set to 79.18% at noise_std=0.05, 77.86%
-at 0.10, 75.33% at 0.15, and 70.25% at 0.20. This is a
-total drop of 8.83 percentage points at the highest noise level. The decline is
-small at low noise (-0.10 percentage points at std=0.05) and steeper at higher
-noise (5.08 percentage points between std=0.15 and 0.20), which suggests the
+at 0.10, 75.33% at 0.15, and 70.25% at 0.20. This is a total drop of 8.83
+percentage points at the highest noise level. The decline issmall at low
+noise (-0.10 percentage points at std=0.05) and steeper at higher noise
+(5.08 percentage points between std=0.15 and 0.20), which suggests the
 learned representation is robust to small perturbations but becomes less
 reliable once the corruption magnitude exceeds the variation seen during
 training.
@@ -43,10 +43,10 @@ image pairs and their labels, with lambda sampled from Beta(alpha,
 alpha). With alpha=0.2, many mixed samples are still close to one
 original image, so they remain semantically meaningful, but they are no
 longer exact repeats of the training data. Because the network never
-receives the same input twice, memorisation of exact training samples becomes much harder,
-forcing the network to learn features that interpolate smoothly between
-classes. This encourages smoother decision boundaries and features that
-generalise beyond the training set.
+receives the same input twice, memorisation of exact training samples
+becomes much harder, forcing the network to learn features that inter-
+polate smoothly between classes. This encourages smoother decision
+boundaries and features that generalise beyond the training set.
 
 [Label Smoothing and Overshooting]
 Label smoothing replaces hard one-hot targets with softer targets. With
