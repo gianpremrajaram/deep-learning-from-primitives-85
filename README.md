@@ -1,4 +1,4 @@
-# Deep Learning From Primitives — COMP0197 CW1 (Grade: 85)
+# Deep Learning From Primitives — COMP0197 (Grade: 85)
 
 A from-scratch study of **generalisation** in convolutional networks on
 CIFAR-10, built under a deliberately strict constraint: **only `torch`,
