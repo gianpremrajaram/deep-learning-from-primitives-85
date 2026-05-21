@@ -147,7 +147,7 @@ micromamba run -n comp0197-pt python tools/smoke_test.py
 
 ## Notes
 
-- Grade: **85**.
+- Grade: **85** - _"Not many scripts should score at the 70% (distinction) band; few should exceed 80% unless the reasoning is exceptional and evidence-backed."_
 - Original submission code in `task1/` and `task2/` is preserved exactly as
   marked; `README.md`, `AI-USAGE.md`, `docs/` and `tools/` are added
   documentation only.
